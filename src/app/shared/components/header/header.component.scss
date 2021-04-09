@@ -2,6 +2,12 @@ ul li {
   list-style: none;
 }
 
+@media (max-width: 599px) {
+  mat-nav-list ul li {
+    display: none;
+  }
+}
+
 /*mat-toolbar {
   background-color: #f2fde4;
 }

@@ -1,3 +1,23 @@
+.layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+.layout mat-card {
+  width: 50%;
+  margin: 5px;
+}
+
+#layout1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#layout1 .lay {
+  width: 50%;
+  margin: 5px;
+}
+
 .stat1 {
   background-color: #b3e5fc;
 }
@@ -11,4 +31,46 @@
 
 .stat4 {
   background-color: #ffcdd2;
+}
+
+// xs
+@media (max-width: 599px) {
+  .layout {
+    display: block;
+  }
+  .layout mat-card {
+    width: 90%;
+    margin: 5px;
+  }
+
+  #layout1 {
+    display: block;
+  }
+  #layout1 .lay {
+    width: 90%;
+    margin: 5px;
+  }
+
+  #layout1 :first-child {
+    text-align: center;
+  }
+}
+
+//sm
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .layout {
+    display: block;
+  }
+  .layout mat-card {
+    width: 90%;
+    margin: 5px;
+  }
+
+  #layout1 {
+    display: block;
+  }
+  #layout1 .lay {
+    width: 90%;
+    margin: 5px;
+  }
 }

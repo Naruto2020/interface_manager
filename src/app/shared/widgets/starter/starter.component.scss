@@ -8,3 +8,18 @@
 .wellcome {
   padding-top: 100px;
 }
+
+@media (max-width: 599px) {
+  .head {
+    width: 100%;
+    img {
+      height: 100px;
+    }
+    p {
+      display: none;
+    }
+  }
+  .wellcome {
+    padding-top: 20px;
+  }
+}

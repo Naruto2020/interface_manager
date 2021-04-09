@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-widget-stats4',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stats4.component.scss']
 })
 export class Stats4Component implements OnInit {
+  commandes:any=0;
+  @Input() data:any=0;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.commandes = this.data;
   }
 
 }

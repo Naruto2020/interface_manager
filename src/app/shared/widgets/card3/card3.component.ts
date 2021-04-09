@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-widget-card3',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card3.component.scss']
 })
 export class Card3Component implements OnInit {
+  likes:any=0;
+  @Input() data: any= 0;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.likes = this.data;
   }
 
 }

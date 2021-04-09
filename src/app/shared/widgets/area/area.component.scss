@@ -1,10 +1,5 @@
-.head {
-  width: 100%;
-  img {
-    height: 200px;
+@media (max-width: 599px) {
+  highcharts-chart {
+    width: 100%;
   }
-}
-
-.wellcome {
-  padding-top: 100px;
 }

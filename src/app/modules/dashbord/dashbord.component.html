@@ -3,45 +3,45 @@
 </div>
 <br/>
 
-<div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="20px" class="stats-cards">
-  <mat-card fxFlex="40">
-    <app-widget-card></app-widget-card>
+<div class="layout">
+  <mat-card >
+    <app-widget-card [data]="card"></app-widget-card>
   </mat-card>
-  <mat-card fxFlex="40">
-    <app-widget-card1></app-widget-card1>
+  <mat-card >
+    <app-widget-card1 [data]="card1"></app-widget-card1>
   </mat-card>
-  <mat-card fxFlex="40">
-    <app-widget-card2></app-widget-card2>
+  <mat-card >
+    <app-widget-card2 [data]="card2"></app-widget-card2>
   </mat-card>
-  <mat-card fxFlex="40">
-    <app-widget-card3></app-widget-card3>
+  <mat-card >
+    <app-widget-card3 [data]="card3"></app-widget-card3>
   </mat-card>
 </div>
 <br/>
 
 <div>
-  <div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="20px" class="stats-cards">
-    <mat-card fxFlex="50">
-      <app-widget-area></app-widget-area>
-    </mat-card>
-    <mat-card fxFlex="50">
+  <div id="layout1">
+    <mat-card  class="lay">
+      <app-widget-area [data]="bigChart"></app-widget-area>
+    </mat-card >
+    <mat-card class="lay">
       <app-widget-stats></app-widget-stats>
       <br/>
-      <div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="20px" class="stats-cards">
+      <div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="10px" >
         <mat-card fxFlex="50" class="stat1">
-          <app-widget-stats1></app-widget-stats1>
+          <app-widget-stats1 [data]="stats1"></app-widget-stats1>
         </mat-card>
         <mat-card fxFlex="50" class="stat2">
-          <app-widget-stats2></app-widget-stats2>
+          <app-widget-stats2 [data]="stats2"></app-widget-stats2>
         </mat-card>
       </div>
       <br/>
-      <div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="20px" class="stats-cards">
+      <div fxLayout="row" fxLayoutAlign = "space-between center" fxLayoutGap="10px" >
         <mat-card fxFlex="50" class="stat3">
-          <app-widget-stats3></app-widget-stats3>
+          <app-widget-stats3 [data]="stats3"></app-widget-stats3>
         </mat-card>
         <mat-card fxFlex="50" class="stat4">
-          <app-widget-stats4></app-widget-stats4>
+          <app-widget-stats4 [data]="stats4"></app-widget-stats4>
         </mat-card>
       </div>
     </mat-card>

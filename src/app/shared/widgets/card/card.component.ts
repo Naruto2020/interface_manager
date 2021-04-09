@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-widget-card',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  suscribers:any=0;
+  @Input() data: any= 0 ;
   constructor() { }
 
   ngOnInit(): void {
+    this.suscribers = this.data;
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-widget-stats2',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Stats2Component implements OnInit {
 
+  vendus:any=0;
+  @Input() data:any=0;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.vendus = this.data;
   }
 
 }

@@ -5,6 +5,8 @@ import { DefaultComponent } from './default.component';
 import { DashbordComponent } from '../../modules/dashbord/dashbord.component';
 import { ManagementComponent } from '../../modules/management/management.component';
 
+import {DashboardService} from '../../modules/dashboard.service'
+
 
 import { RouterModule } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -28,6 +30,9 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     FlexLayoutModule,
     MatDividerModule
+  ],
+  providers: [
+    DashboardService
   ]
 
 })
